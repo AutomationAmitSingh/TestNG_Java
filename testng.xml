@@ -4,6 +4,7 @@
     <test verbose="2" preserve-order="true" name="F:/TestNG_Projects/TestNG_Java">
         <classes>
             <class name="Priority_TestNG"/>
+            <class name="Skip_Pass_Fail"/>
         </classes>
     </test>
 </suite>

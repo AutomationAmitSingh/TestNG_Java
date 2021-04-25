@@ -11,13 +11,13 @@ public class Skip_Pass_Fail {
     }
 
     // Pass Test
-    @Test()
+    @Test
     public void passTestMethod() {
         Assert.assertTrue(true);
     }
 
     // Fail Test
-    @Test()
+    @Test
     public void failTestMethod() {
         Assert.assertTrue(false);
     }

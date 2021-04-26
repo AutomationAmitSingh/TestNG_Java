@@ -17,6 +17,15 @@
                     <include name="failTestMethod"/>
                 </methods>
             </class>
+            <class name="DependOn_AlwaysRun_Method">
+                <methods>
+                    <include name="wakeUp"/>
+                    <include name="getFresh"/>
+                    <include name="work"/>
+                    <include name="goToBed"/>
+                    <include name="sleep"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

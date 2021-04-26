@@ -3,8 +3,20 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="F:/TestNG_Projects/TestNG_Java">
         <classes>
-            <class name="Priority_TestNG"/>
-            <class name="Skip_Pass_Fail"/>
+            <class name="Priority_TestNG">
+                <methods>
+                    <include name="setUp"/>
+                    <include name="login"/>
+                    <include name="tearDown"/>
+                </methods>
+            </class>
+            <class name="Skip_Pass_Fail">
+                <methods>
+                    <include name="skipTestMethod"/>
+                    <include name="passTestMethod"/>
+                    <include name="failTestMethod"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

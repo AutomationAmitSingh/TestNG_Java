@@ -1,6 +1,42 @@
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class Priority_TestNG {
+
+    @BeforeMethod
+    public void beforeMethod()
+    {
+        System.out.println(" <--------Before Method---------> ");
+    }
+
+    @AfterMethod
+    public void afterMethod()
+    {
+        System.out.println(" <--------After Method---------> ");
+    }
+
+    @BeforeClass
+    public void beforeClass()
+    {
+        System.out.println(" <--------Before Class---------> ");
+    }
+
+    @AfterClass
+    public void afterClass()
+    {
+        System.out.println(" <--------After Class---------> ");
+    }
+
+    @BeforeSuite
+    public void beforeSuite()
+    {
+        System.out.println(" <--------Before Suit---------> ");
+    }
+
+    @AfterSuite
+    public void afterSuite()
+    {
+        System.out.println(" <--------After Suit---------> ");
+    }
 
     @Test(priority = 1)
     public void setUp()

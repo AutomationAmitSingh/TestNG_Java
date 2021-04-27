@@ -2,7 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="F:/TestNG_Projects/TestNG_Java">
+
+        <groups>
+            <run>
+                <exclude name="Sanity"/>
+                <include name="Regression"/>
+            </run>
+        </groups>
+
         <classes>
+            <class name="Grouping"/>
             <class name="Priority_TestNG">
                 <methods>
                     <include name="setUp"/>

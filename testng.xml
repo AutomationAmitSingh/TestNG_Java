@@ -42,6 +42,7 @@
                     <include name="skipTestMethod"/>
                     <include name="passTestMethod"/>
                     <include name="failTestMethod"/>
+                    <include name="getData"/>
                 </methods>
             </class>
             <class name="DependOn_AlwaysRun_Method">

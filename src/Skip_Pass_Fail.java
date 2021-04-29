@@ -57,4 +57,10 @@ public class Skip_Pass_Fail {
     public void failTestMethod() {
         Assert.assertTrue(false);
     }
+
+    @Test(dataProvider = "loginData",dataProviderClass = CustomDataProvider.class)
+    public void getData(String fn, String ln)
+    {
+      System.out.println(fn+" "+ln);
+    }
 }

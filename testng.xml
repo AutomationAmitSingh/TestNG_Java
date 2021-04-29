@@ -11,6 +11,14 @@
         </groups>
 
         <classes>
+            <class name="Assertion_Class">
+                <methods>
+                    <include name="setUp"/>
+                    <include name="logoTest"/>
+                    <include name="homePageTitle"/>
+                    <include name="tearDown"/>
+                </methods>
+            </class>
             <class name="Grouping"/>
             <class name="Priority_TestNG">
                 <methods>

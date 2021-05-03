@@ -20,14 +20,14 @@ in test method @Test(dataProvider = "loginData",dataProviderClass = CustomDataPr
   @Parameters({"browser","url"})
   public void setUp(String browser, String url) {
 In testng xml
-  <parameter name="browser" value="firefox"/>
-  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"/>  
+  parameter name="browser" value="firefox"
+  parameter name="url" value="https://opensource-demo.orangehrmlive.com/" 
 - Parallel testing can be applied to method level class level and test level too
-  <suite name="All Test Suite" parallel="classes" thread-count="2">
+  suite name="All Test Suite" parallel="classes" thread-count="2"
 - Listners can be executed in two ways one applying directly on class and other in testng xml
 -One : @Listeners(Custom_Listners.class) where Custom_Listners where all method implemented from Itestlistners
--Second : 
-  <suite name="All Test Suite" parallel="classes" thread-count="2">
-  <listeners>
-  <listener class-name="Custom_Listners"></listener>
-  </listeners>  
+-Second :
+  suite name="All Test Suite" parallel="classes" thread-count="2"
+  listeners
+  listener class-name="Custom_Listners"listener
+  listeners  
